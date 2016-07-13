@@ -1,7 +1,11 @@
-@bg-darkblue: #1d2632;
+@import "global/normalize.less";
+@import "global/outlines.less";
+@import "blocks/page-header.less";
+@import "blocks/main-nav.less";
+@bg-darkblue: #292929;
 @mobile-widths-only: ~"(max-width: 767px)";
-@tablet-widths: ~"(max-width: 768px)";
-@desktop-widths: ~:"(max-width: 1200px)";
+@tablet-widths: ~"(min-width: 768px)";
+@desktop-widths: ~"(min-width: 1200px)";
 body {
   margin: 0;
   padding: 0;
@@ -20,5 +24,35 @@ body {
   }
 }
 
+.container {
+  width: 280px;
+  margin: 0 auto;
 
+  @media @tablet-widths {
+    width: 620px;
+  }
 
+  @media @desktop-widths {
+    width: 940px;
+  }
+}
+
+body {
+  padding: 6px;
+  background: @bg-darkblue url("img/bb-mobile.png") no-repeat center top / 720px auto;
+  min-height: 2555px;
+}
+
+@media @tablet-widths {
+  body {
+    background: @bg-darkblue url("img/bb-tablet.png") no-repeat center top / 1178px auto;
+    min-height: 2400px;
+  }
+}
+
+@media @desktop-widths {
+  body {
+    background: @bg-darkblue url("img/bb-desktop.png") no-repeat center top / 1391px auto;
+    min-height: 2250px;
+  }
+}
