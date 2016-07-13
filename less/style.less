@@ -1,0 +1,24 @@
+@bg-darkblue: #1d2632;
+@mobile-widths-only: ~"(max-width: 767px)";
+@tablet-widths: ~"(max-width: 768px)";
+@desktop-widths: ~:"(max-width: 1200px)";
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: Open Sans, sans-serif;
+  color: #ffffff;
+  background-color: @bg-darkblue;
+}
+
+.clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+
+
