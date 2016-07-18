@@ -7,7 +7,6 @@
 .main-nav__items {
   margin: 0;
   padding: 0;
-
   list-style: none;
 }
 
@@ -21,8 +20,7 @@
   
   .main-nav__wrapper {
     .container;
-    .clearfix;
-  }
+    }
   
   .main-nav__items {
     .clearfix;
@@ -41,10 +39,13 @@
 
 @media @desktop-widths {
 
-  .main-nav__item {
-    display: inline-block;
-    width: 580px;
+  .main-nav__toggle {
+    
+  display: none;
   }
-
-
+.main-nav__item {
+  display: inline-block;
+  float: left;
+  width: 120px;
+}
 }
