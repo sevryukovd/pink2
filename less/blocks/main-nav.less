@@ -1,12 +1,16 @@
 .main-nav {
-  float: right;
   
 }
-
-
 .main-nav__items {
   margin: 0;
   padding: 0;
+
+  list-style: none;
+}
+.main-nav__link {
+    margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
@@ -18,13 +22,12 @@
     margin: 0;
   }
   
-  .main-nav__wrapper {
+ .main-nav__wrapper {
     .container;
-    }
+    .clearfix;
+  }
   
   .main-nav__items {
-    .clearfix;
-
     float: left;
     width: 570px;
   }
@@ -38,6 +41,10 @@
 
 
 @media @desktop-widths {
+.main-nav__items {
+    width: 780px;
+  float: right;
+  }
 
   .main-nav__toggle {
     
@@ -45,7 +52,8 @@
   }
 .main-nav__item {
   display: inline-block;
-  float: left;
-  width: 120px;
+  width: 130px;
+  float: right;
+  margin-left: 0px;
 }
 }
