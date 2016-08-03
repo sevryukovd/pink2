@@ -14,12 +14,21 @@
 @desktop-widths: ~"(min-width: 1200px)";
 
 @font-face {
+  font-weight: lighter;
+  font-family: "Open Sans";
+  font-style: normal;
+
+  src: url("../fonts/opensanslight.woff2") format("woff2"),
+  url("../fonts/opensanslight.woff") format("woff");
+}
+
+@font-face {
   font-weight: normal;
   font-family: "Open Sans";
   font-style: normal;
 
-  src: url("fonts/PTSansNarrow.woff2") format("woff2"),
-  url("fonts/PTSansNarrow.woff") format("woff");
+  src: url("../fonts/opensans.woff2") format("woff2"),
+  url("../fonts/opensans.woff") format("woff");
 }
 
 @font-face {
@@ -27,8 +36,8 @@
   font-family: "Open Sans";
   font-style: normal;
 
-  src: url("fonts/PTSansNarrowBold.woff2") format("woff2"),
-  url("fonts/PTSansNarrowBold.woff") format("woff");
+  src: url("../fonts/opensansbold.woff2") format("woff2"),
+  url("../fonts/opensansbold.woff") format("woff");
 }
 
 body {
