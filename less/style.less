@@ -8,17 +8,35 @@
 @import "blocks/price-table.less";
 @import "blocks/page-footer.less";
 
-
 @bg-darkblue: #1d2631;
 @mobile-widths-only: ~"(max-width: 767px)";
 @tablet-widths: ~"(min-width: 768px)";
 @desktop-widths: ~"(min-width: 1200px)";
+
+@font-face {
+  font-weight: normal;
+  font-family: "Open Sans";
+  font-style: normal;
+
+  src: url("fonts/PTSansNarrow.woff2") format("woff2"),
+  url("fonts/PTSansNarrow.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: "Open Sans";
+  font-style: normal;
+
+  src: url("fonts/PTSansNarrowBold.woff2") format("woff2"),
+  url("fonts/PTSansNarrowBold.woff") format("woff");
+}
+
 body {
   margin: 0;
   padding: 0;
   font-size: 18px;
   line-height: 30px;
-  font-family: Open Sans, sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #ffffff;
   background-color: @bg-darkblue;
 }
