@@ -16,12 +16,14 @@
 }
 .promo-download {
   background-color: #1d2631;
+  text-align: center;
 }
 .promo-download__link {
  display: block;
   margin-bottom:30px;
+  margin: 0 auto;
   padding:13px 35px;
-  max-width:500px;
+ max-width: 280px;
   text-decoration:none;
   text-align: center;
   font:700 18px/22px OpenSans,Helvetica,Arial,sans-serif;
@@ -41,6 +43,12 @@
   margin-bottom: 20px;
 }
 @media @tablet-widths {
-  
 
+  .promo-download {
+    min-height: 620px;
+    
+    top: 0;
+    left: 0;
+    background-color: transparent;  
+  }
 }
