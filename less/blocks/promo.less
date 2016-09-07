@@ -1,54 +1,65 @@
 .promo__wrapper {
-    .container-fluid;
-    .clearfix;
-  }
+  .container;
+  .clearfix;
+}
 
 .promo__title {
- font-size: 24px;
- font-weight: lighter;
+  font-size: 24px;
+  font-weight: lighter;
   text-align: center;
-  
 }
-.promo__header {
-  min-height: 392px;
- background:url(../../img/iphone-hand-mobile.png) no-repeat bottom;
 
+@media @mobile-widths-only {
+  .promo__header {
+    min-height: 416px;
+    margin-bottom: 28px;
+    background: url(../../img/iphone-hand-mobile.png) no-repeat left bottom;
+  }
+ 
 }
+
 .promo-download {
   background-color: #1d2631;
   text-align: center;
 }
+
 .promo-download__link {
- display: block;
-  margin-bottom:30px;
+  display: block;
   margin: 0 auto;
-  padding:13px 35px;
- max-width: 280px;
-  text-decoration:none;
+  padding: 13px 35px;
+  max-width: 280px;
+  text-decoration: none;
   text-align: center;
-  font:700 18px/22px OpenSans,Helvetica,Arial,sans-serif;
-  color:#fff;
-  border:3px solid #fff;
-  border-radius:37px;
-  margin-bottom: 50px;
+  font: 700 18px/22px OpenSans, Helvetica, Arial, sans-serif;
+  color: #fff;
+  border: 3px solid #fff;
+  border-radius: 37px;
+ 
 }
+
 .promo-download__logos {
   display: inline-block;
-  margin-bottom: 20px;
+  margin-top: 32px;
+  margin-bottom: 25px;
+}
+.promo-download__social-link {
+  margin-right: 25px;
+}
 
+.promo-download__social-link:last-child {
+  margin-right: 0px;
 }
 .downloads__information {
   display: block;
   font-size: 14px;
   margin-bottom: 20px;
 }
-@media @tablet-widths {
 
+@media @tablet-widths {
   .promo-download {
     min-height: 620px;
-    
     top: 0;
     left: 0;
-    background-color: transparent;  
+    background-color: transparent;
   }
 }
