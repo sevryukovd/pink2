@@ -10,10 +10,16 @@
 }
 
 @media @mobile-widths-only {
+  .promo__title {
+    display: none;
+  }
   .promo__header {
-    min-height: 416px;
+    min-height: 392px;
     margin-bottom: 28px;
     background: url(../../img/iphone-hand-mobile.png) no-repeat left bottom;
+  }
+  .promo-download__link {
+    max-width: 280px;
   }
  
 }
@@ -27,7 +33,7 @@
   display: block;
   margin: 0 auto;
   padding: 13px 35px;
-  max-width: 280px;
+  max-width: 224px;
   text-decoration: none;
   text-align: center;
   font: 700 18px/22px OpenSans, Helvetica, Arial, sans-serif;
@@ -40,7 +46,7 @@
 .promo-download__logos {
   display: inline-block;
   margin-top: 32px;
-  margin-bottom: 25px;
+
 }
 .promo-download__social-link {
   margin-right: 25px;
@@ -52,11 +58,12 @@
 .downloads__information {
   display: block;
   font-size: 14px;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
 }
 
 @media @tablet-widths {
   .promo-download {
+    float: left;
     min-height: 620px;
     top: 0;
     left: 0;
