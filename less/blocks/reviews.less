@@ -3,7 +3,87 @@
 }
 
 .reviews {
-  
+  padding-top: 45px;
+  padding-bottom: 100px;
   background-color: #ffffff;
   color: #283645;
+}
+.reviews__auhor-name {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+.reviews__text {
+  font-size: 14px;
+  text-align: center;
+}
+
+.reviews__item {
+  display:none;
+}
+
+
+#review-1:checked~.slide-1,
+#review-2:checked~.slide-2,
+#review-3:checked~.slide-3 {
+  display:block;
+}
+
+@media @mobile-widths-only{
+  .review__subtitle{
+    display: none;
+      }  
+  .reviews__arrow{
+    display: none;
+  }
+  
+  }
+
+
+.slider-controls {
+  position:relative;
+}
+
+.slider-controls input[type=radio] {
+  display:none;
+}
+.control-labels {
+  position:absolute;
+  bottom:-57px;
+  right: 85px;;
+  margin-left:-100px;
+  margin-right:-10px;
+  width:100px;
+}
+
+.control-labels.table-prices {
+  bottom:42px;
+}
+
+.control-label {
+  display:inline-block;
+  vertical-align:middle;
+  margin-right:9px;
+  width:6px;
+  height:6px;
+  background-color:#bec2c7;
+  -webkit-background-clip:content-box;
+  background-clip:content-box;
+  border:3px solid transparent;
+  -webkit-border-radius:50%;
+  border-radius:50%;
+}
+
+.control-label:hover {
+  background-color:#7e868f;
+}
+
+.control-label:active {
+  background-color:#e9ebec;
+}
+#review-1:checked~.control-labels label[for=review-1],
+#review-2:checked~.control-labels label[for=review-2],
+#review-3:checked~.control-labels label[for=review-3] {
+  background-color:transparent;
+  border:3px solid #283645;
 }

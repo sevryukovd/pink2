@@ -32,28 +32,35 @@
 
     <section class="promo">
       <div class="promo__wrapper">
-       <div class="promo__header">
-        <h2 class="promo__title">Взгляните на жизнь иначе!</h2>        
+        <div class="promo__header">
+          <h2 class="promo__title">Взгляните на жизнь иначе!</h2>
         </div>
         <div class="promo-download">
-        <a class="promo-download__link" href="#">Скачать приложение</a>
-        <div class="promo-download__logos">
-          <a class="promo-download__social-link" href="http://www.apple.com/ru/itunes/"><img class="download__logo-apple" src="img/logo-apple.svg" width="47" height="56" alt="apple"></a>
-          <a class="promo-download__social-link" href="https://play.google.com/store"><img class="download__logo-android" src="img/logo-android.svg" width="46" height="47" alt="android"></a>
-          <a class="promo-download__social-link" href="https://www.microsoft.com/ru-ru/store/apps"><img class="download__logo-win" src="img/logo-microsoft.svg" width="44" height="41" alt="win"></a>
+          <a class="promo-download__link" href="#">Скачать приложение</a>
+          <div class="promo-download__logos">
+            <a class="promo-download__social-link" href="http://www.apple.com/ru/itunes/"><img class="download__logo-apple" src="img/logo-apple.svg" width="47" height="56" alt="apple"></a>
+            <a class="promo-download__social-link" href="https://play.google.com/store"><img class="download__logo-android" src="img/logo-android.svg" width="46" height="47" alt="android"></a>
+            <a class="promo-download__social-link" href="https://www.microsoft.com/ru-ru/store/apps"><img class="download__logo-win" src="img/logo-microsoft.svg" width="44" height="41" alt="win"></a>
+          </div>
+          <p class="downloads__information">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
-        <p class="downloads__information">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-      </div>
       </div>
     </section>
-    <section class="advantages">
-      <div class="advantages__wrapper">
-        <header class="advantages__header">
-          <h2 class="advantages__slogan">
+
+
+    <section class="advantages-info">
+      <div class="advantages-info__wrapper">
+
+        <h2 class="advantages-info__slogan">
           <p>Устали от серости мегаполиса?</p>
           <p>Нам есть, что вам предложить!</p>
         </h2>
-        </header>
+      </div>
+    </section>
+
+    <section class="advantages">
+      <div class="advantages__wrapper">
+
         <ul class="advantages__items">
           <li class="advantages__item">
             <h3 class="advantages__title">Поднимает настроение</h3>
@@ -71,61 +78,153 @@
         <img class="advantages__image" src="img/iphone-screen-mobile.png" width="157" height="320" alt="iphone screen">
       </div>
     </section>
+
+    <!-- reviews - белый фон + серый треугольник вторым фоном-->
+
     <section class="reviews">
-      <div class="reviews__wrapper">
-        <blockquote class="reviews__item">
-          <cite class="reviews__auhor-name">Николай Петров</cite>
-          <p>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
+      <div class="reviews__wrapper slider-controls">
+
+        <!-- скрытые радиобаттоны -->
+
+        <input type="radio" name="review-toggle" id="review-1" checked>
+        <input type="radio" name="review-toggle" id="review-2">
+        <input type="radio" name="review-toggle" id="review-3">
+
+        <!-- лейблы стилизуются под управляющие кнопки -->
+
+        <div class="control-labels">
+          <label class="control-label" for="review-1"></label>
+          <label class="control-label" for="review-2"></label>
+          <label class="control-label" for="review-3"></label>
+        </div>
+
+        <!-- стрелки для десктопной версии слайдера -->
+        <a href="#" class="reviews__arrow arrow--left">Пред.</a>
+        <a href="#" class="reviews__arrow arrow--right">След.</a>
+
+        <blockquote class="reviews__item slide-1">
+          <h3 class="reviews__auhor-name ">Николай Петров</h3>
+          <p class="review__subtitle">25 лет, водитель трамвая</p>
+          <p class="reviews__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
         </blockquote>
-        <blockquote class="reviews__item">
-          <cite class="reviews__auhor-name">Николай Петров</cite>
-          <p>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
+        <blockquote class="reviews__item slide-2">
+          <h3 class="reviews__auhor-name">Николай Сидоров</h3>
+          <p class="review__subtitle">25 лет, водитель трамвая</p>
+          <p class="reviews__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
         </blockquote>
-        <blockquote class="reviews__item">
-          <cite class="reviews__auhor-name">Николай Петров</cite>
-          <p>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
+        <blockquote class="reviews__item slide-3">
+          <h3 class="reviews__auhor-name">Николай Иванов</h3>
+          <p class="review__subtitle">25 лет, водитель трамвая</p>
+          <p class="reviews__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
         </blockquote>
       </div>
     </section>
 
 
-    <div class="price-table__wrapper">
-      <table class="price-table">
-        <thead class="price-table__thead">
-          <tr class="price-table__tr">
-            <th class="price-table__th"></th>
-            <th class="price-table__th">База</th>
-            <th class="price-table__th">Стандарт</th>
-            <th class="price-table__th">Анлим</th>
-          </tr>
-          <tr class="price-table__tr">
-            <th class="price-table__th"></th>
-            <th class="price-table__th">1,99 USD</th>
-            <th class="price-table__th">3,99 USD</th>
-            <th class="price-table__th">9,99 USD</th>
-          </tr>
-        </thead>
-        <tbody class="price-table__tbody">
-          <tr class="price-table__tr">
-            <th class="price-table__th">Розовый фильтр</th>
-            <td class="price-table__td">yes</td>
-            <td class="price-table__td">yes</td>
-            <td class="price-table__td">yes</td>
-          </tr>
-          <tr class="price-table__tr">
-            <th class="price-table__th">Смайлики</th>
-            <td class="price-table__td">no</td>
-            <td class="price-table__td">yes</td>
-            <td class="price-table__td">yes</td>
-          </tr>
-          <tr class="price-table__tr">
-            <th class="price-table__th">Комментарии</th>
-            <td class="price-table__td">no</td>
-            <td class="price-table__td">no</td>
-            <td class="price-table__td">yes</td>
-          </tr>
-        </tbody>
-      </table>
+    <div class="price-table slider-controls">
+      <!-- невидимые радиобаттоны -->
+      <input type="radio" name="price-toggle" id="price-table-1">
+      <input type="radio" name="price-toggle" id="price-table-2" checked>
+      <input type="radio" name="price-toggle" id="price-table-3">
+
+      <!-- управляющие кнопки -->
+      <div class="control-labels  table-prices">
+        <label class="control-label" for="price-table-1"></label>
+        <label class="control-label" for="price-table-2"></label>
+        <label class="control-label" for="price-table-3"></label>
+      </div>
+
+      <div class="price-table__wrapper">
+        <table class="price-table__body">
+          <thead class="price-table__thead">
+            <tr>
+              <th class="price-table__empty-cell"></th>
+              <th>
+                <p class="price-table__title">База</p>
+                <p class="price-table__amount">1,99 USD</p>
+              </th>
+              <th class="flag-hit">
+               <div class="flag-hit__inner-wrapper">
+                <p class="price-table__title">Стандарт</p>
+                <p class="price-table__amount">3,99 USD</p>
+                </div>
+              </th>
+              <th>
+                <p class="price-table__title">Анлим</p>
+                <p class="price-table__amount">9,99 USD</p>
+              </th>
+            </tr>
+
+          </thead>
+          <tbody class="price-table__tbody">
+            <tr>
+              <td class="price-table__first-col-tablet"><span class="price-table__feature-cell">Розовый фильтр</span></td>
+              <td>
+                <div class="checkbox-inner-wrapper">
+                  <span class="prices__feature">Розовый фильтр</span>
+                  <div class="prices__checkbox  price-table__checkbox--checked">yes</div>
+                </div>
+              </td>
+              <td>
+                <div class="checkbox-inner-wrapper">
+                  <span class="price-table__feature">Розовый фильтр</span>
+                  <div class="price-table__checkbox  price-table__checkbox--checked">yes</div>
+                </div>
+              </td>
+              <td>
+                <div class="checkbox-inner-wrapper">
+                  <span class="price-table__feature">Розовый фильтр</span>
+                  <div class="price-table__checkbox  price-table__checkbox--checked">yes</div>
+                </div>
+              </td>
+            </tr>
+            
+            <tr>
+              <td class="price-table__first-col-tablet"><span class="price-table__feature-cell">Смайлики</span></td>
+              <td>
+                <div class="checkbox-inner-wrapper">
+                  <span class="prices__feature">Смайлики</span>
+                  <div class="prices__checkbox  price-table__checkbox--unchecked">no</div>
+                </div>
+              </td>
+              <td>
+                <div class="checkbox-inner-wrapper">
+                  <span class="price-table__feature">Смайлики</span>
+                  <div class="price-table__checkbox  price-table__checkbox--checked">yes</div>
+                </div>
+              </td>
+              <td>
+                <div class="checkbox-inner-wrapper">
+                  <span class="price-table__feature">Смайлики</span>
+                  <div class="price-table__checkbox  price-table__checkbox--checked">yes</div>
+                </div>
+              </td>
+            </tr>
+            
+            <tr>
+              <td class="price-table__first-col-tablet"><span class="price-table__feature-cell">Комментарии</span></td>
+              <td>
+                <div class="checkbox-inner-wrapper">
+                  <span class="prices__feature">Комментарии</span>
+                  <div class="prices__checkbox  price-table__checkbox--unchecked">no</div>
+                </div>
+              </td>
+              <td>
+                <div class="checkbox-inner-wrapper">
+                  <span class="price-table__feature">Комментарии</span>
+                  <div class="price-table__checkbox  price-table__checkbox--unchecked">no</div>
+                </div>
+              </td>
+              <td>
+                <div class="checkbox-inner-wrapper">
+                  <span class="price-table__feature">Комментарии</span>
+                  <div class="price-table__checkbox  price-table__checkbox--checked">yes</div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
 
   </main>
