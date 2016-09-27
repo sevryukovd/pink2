@@ -1,8 +1,15 @@
 .price-table__wrapper {
   .container;
+     
   
 }
-
+.slider-controls {
+  position:relative;
+}
+.price-table__body {
+  margin:0;
+  width:100%;
+}
 .price-table {
   position: relative;
   padding-top: 63px;
@@ -51,6 +58,7 @@
   font-weight: 700;
   
 }
+
 .price-table__amount {
   font-size: 24px;
   line-height: 30px;
@@ -103,27 +111,32 @@
   -webkit-transform:rotate(-45deg);
   -ms-transform:rotate(-45deg);
   transform:rotate(-45deg);
+  
 }
 .price-table__checkbox--unchecked:after {
   -webkit-transform:rotate(45deg);
   -ms-transform:rotate(45deg);
   transform:rotate(45deg);
+  
 }
 #price-table-1:checked~.price-table__wrapper .price-table__body {
   -webkit-transform:translate(0);
   -ms-transform:translate(0);
   transform:translate(0);
+  
 }
 #price-table-2:checked~.price-table__wrapper .price-table__body {
   -webkit-transform:translate(-33.3%);
   -ms-transform:translate(-33.3%);
   transform:translate(-33.3%);
+  
 }
 
 #price-table-3:checked~.price-table__wrapper .price-table__body {
   -webkit-transform:translate(-66.6%);
   -ms-transform:translate(-66.6%);
   transform:translate(-66.6%);
+  
 }
 .flag-hit__inner-wrapper {
   position:relative;
@@ -160,6 +173,7 @@
   z-index:100;
 }
 
+
 .checkbox-inner-wrapper {
   position:relative;
   width:100%;
@@ -175,30 +189,10 @@
 
 .price-table td,
 .price-table th,
-.price-table__table {
+.price-table__body {
   border-collapse:collapse;
   border:2px solid #e5e5e5;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 @media @mobile-widths-only {
